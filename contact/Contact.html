@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link rel="stylesheet" type="text/css" href=../stylesheet/stylesheet.css>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+<header>
+    <h1 class="sitename">Contact</h1>
+    <nav class="topsitenav">
+        <ul>
+            <li><a href=../index.html>Home</a></li>
+            <li><a href=../cv/CV.html> CV </a></li>
+            <li><u>Contact</u></li>
+            <li><a href=../projecten/projecten.html>Projecten</a></li>
+            <li><a href="../werkplekleren/werkplekleren.html">Werkplekleren</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+<form action="./post-demo.php" method="post">
+    <fieldset>
+
+        <legend>Je gegevens</legend>
+
+        <h3><label for="Voornaam" >Voornaam</label></h3>
+        <input id="Voornaam" type="text" name="Voornaam" required><br>
+        <h3><label for="Achternaam">Achternaam</label></h3>
+        <input id="Achternaam" type="text" name="Familienaam" required><br>
+        <h3><label for="E-mail">E-mail</label></h3>
+        <input id="E-mail" type="email" name="E-mail"  required><br>
+    </fieldset>
+    <fieldset>
+        <legend>Uw vraag</legend>
+        <h3><label for="Type-vraag">Waarvoor wilt u contact opnemen?</label></h3>
+        <select name="Type-vraag" id="Type-vraag">
+            <option value="Algemene vragen">Algemene vragen</option>
+            <option value="Jobaanbiedingen">Jobaanbiedingen</option>
+            <option value="Vragen i.v.m. een project">Vragen i.v.m. een project</option>
+            <option value="Feedback over mijn site">Feedback over mijn site</option>
+
+        </select><br>
+        <label for="Vraag">
+        </label><textarea name="Vraag" id="Vraag" cols="49" rows="10" required></textarea><br>
+        <input type="submit" value="Verstuur">
+
+    </fieldset>
+</form>
+
+
+</body>
+
+
+<footer>
+    <nav class="bottomsitenav">
+        <ul>
+            <li><a href=../index.html>Home</a></li>
+            <li><a href=../cv/CV.html> CV </a></li>
+            <li><u>Contact</u></li>
+            <li><a href=../projecten/projecten.html>Projecten</a></li>
+            <li><a href="../werkplekleren/werkplekleren.html">Werkplekleren</a></li>
+        </ul>
+    </nav>
+    <a class=socialmedia href="https://github.com/TruijenM/" target="_blank">Github</a>
+</footer>
+</html>
