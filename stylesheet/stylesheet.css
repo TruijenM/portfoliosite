@@ -10,7 +10,8 @@ html {
     font-family: "Lobster Two", sans-serif;
     color: #c0c0c0;
     background-image: url(freenaturestock-1408-1024x683.jpeg);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100%, 100%;
 
 }
