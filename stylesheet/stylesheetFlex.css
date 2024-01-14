@@ -5,6 +5,7 @@
     src: url(https://fonts.gstatic.com/s/lobstertwo/v20/BngMUXZGTXPUvIoyV6yN5-fN5qU.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 html {
     font-family: "Lobster Two", sans-serif;
 
@@ -18,22 +19,26 @@ html {
     margin: 0;
 
 }
-.flex-container{
 
-    display:flex;
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 
 }
+
 nav {
     font-size: 3.5em;
-    flex-basis: 100vw;
+    /*flex-basis: 100vw;*/
     margin-bottom: 5%;
 
 }
-a:hover {
-    ;}
-nav>a>div,nav>div{
+
+a:hover {;
+}
+
+nav > a > div, nav > div {
     text-align: center;
     border-style: solid;
     border-width: 2px;
@@ -43,40 +48,45 @@ nav>a>div,nav>div{
     margin-left: 8vw;
     margin-right: 8vw;
 }
-nav>a>div:hover{
+
+nav > a > div:hover {
     background-color: rgba(41, 41, 68, 0.69)
 }
-a,a:link, a:visited {
+
+a, a:link, a:visited {
 
     color: #c0c0c0;
     text-decoration: none;
 
 }
-h1{
+
+h1 {
     text-align: center;
     margin: 1vw;
     flex-basis: 100%;
     font-size: 4.5em;
 }
-h2{
+
+h2 {
     margin-top: 0;
 }
-main{
+
+main {
     /*font-size: 2.5em;*/
     margin-left: 8vw;
     margin-right: 8vw;
 }
 
-blockquote{
+blockquote {
     background-color: rgba(107, 105, 105, 0.4);
     text-align: center;
 }
-main>div{
+
+main > div {
     font-size: 2em;
     border-color: #ffffff;
     border-style: solid;
     border-radius: 25px;
     margin-bottom: 3%;
     padding-left: 1vw;
-
 }
