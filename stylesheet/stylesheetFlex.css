@@ -32,17 +32,18 @@ html {
     flex-wrap:wrap;
 }
 
-.flex-container-row {
+.flex-container-cv-head {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
     margin: 0 8vw 0 8vw;
+    font-size: 2.5em;
 
 }
 
-.flex-container-row > p{
-    font-size: 2em;
-    margin: 0 0 0 3vw;
+.flex-container-cv-head{
+
+    margin: 0 7.5vw 0 7.5vw;
 }
 
 nav {
@@ -82,12 +83,21 @@ h1 {
 h2 {
     margin: 1vw 0 1vw 0;
 }
+li{
+    margin-bottom: 10px;
+}
+div>img{
+    margin-top: 1.2em;
+}
 
 main {
     padding-left: 2vw;
     font-size: 2em;
-    margin-left: 6vw;
+    margin-left: 7.5vw;
     margin-right: 8vw;
+}
+main>*{
+    font-size: 2em;
 }
 
 blockquote {
@@ -105,4 +115,7 @@ main > div {
 }
 .centertext{
     text-align:center ;
+}
+.mediumsize{
+    font-size: 3em;
 }
