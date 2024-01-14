@@ -35,7 +35,7 @@ html {
 .flex-container-cv-head {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin: 0 8vw 0 8vw;
     font-size: 2.5em;
 
@@ -87,7 +87,7 @@ li{
     margin-bottom: 10px;
 }
 div>img{
-    margin-top: 1.2em;
+    margin: 2vw 15vw 0 3vw
 }
 
 main {
