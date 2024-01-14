@@ -33,7 +33,7 @@ nav {
 }
 a:hover {
     ;}
-nav>div{
+nav>a>div,nav>div{
     text-align: center;
     border-style: solid;
     border-width: 2px;
@@ -43,28 +43,36 @@ nav>div{
     margin-left: 8vw;
     margin-right: 8vw;
 }
-nav>div:hover{
+nav>a>div:hover{
     background-color: rgba(41, 41, 68, 0.69)
+}
+a,a:link, a:visited {
+
+    color: #c0c0c0;
+    text-decoration: none;
+
 }
 h1{
     text-align: center;
     margin: 1vw;
     flex-basis: 100%;
-    font-size: 4em;
+    font-size: 4.5em;
 }
 h2{
     margin-top: 0;
 }
 main{
+    /*font-size: 2.5em;*/
     margin-left: 8vw;
     margin-right: 8vw;
 }
+
 blockquote{
     background-color: rgba(107, 105, 105, 0.4);
     text-align: center;
 }
 main>div{
-    font-size: 3em;
+    font-size: 2em;
     border-color: #ffffff;
     border-style: solid;
     border-radius: 25px;
