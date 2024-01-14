@@ -26,12 +26,10 @@ html {
     margin-bottom: 3px;
 }
 
-.flex-container-column {
+.flex-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-
-
+    flex-wrap:wrap;
 }
 
 .flex-container-row {
@@ -50,6 +48,7 @@ html {
 nav {
     font-size: 3.5em;
     margin-bottom: 5%;
+    flex-basis: 100vw;
 }
 
 
@@ -86,8 +85,8 @@ h2 {
 
 main {
     padding-left: 2vw;
-    font-size: 1.5em;
-    margin-left: 8vw;
+    font-size: 2em;
+    margin-left: 6vw;
     margin-right: 8vw;
 }
 
