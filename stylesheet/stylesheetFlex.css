@@ -19,34 +19,47 @@ html {
     margin: 0;
 
 }
+.borders{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 25px;
+    margin-bottom: 3px;
+}
 
 .flex-container-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*flex-wrap: wrap;*/
 
+
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 8vw 0 8vw;
+
+}
+
+.flex-container-row > p{
+    font-size: 2em;
+    margin: 0 0 0 3vw;
 }
 
 nav {
     font-size: 3.5em;
-    /*flex-basis: 100vw;*/
     margin-bottom: 5%;
-
 }
 
-a:hover {;
-}
 
 nav > a > div, nav > div {
     text-align: center;
     border-style: solid;
     border-width: 2px;
-    /*border-bottom: transparent;*/
     border-radius: 25px;
-    margin-bottom: 3px;
-    margin-left: 8vw;
-    margin-right: 8vw;
+    margin: 0 8vw 3px 8vw;
+
 }
 
 nav > a > div:hover {
