@@ -31,6 +31,10 @@ html {
     justify-content: center;
     flex-wrap:wrap;
 }
+.flex-container>*{
+    margin: 0 8vw 0 8vw;
+    flex-basis: 100vw;
+}
 
 .flex-container-cv-head {
     display: flex;
@@ -116,6 +120,19 @@ main > div {
 .centertext{
     text-align:center ;
 }
-.mediumsize{
+.mediumtext{
     font-size: 3em;
 }
+.smalltext{
+    font-size: 2em;
+}
+input, textarea{
+    height: 3em;
+    width: 40%;
+}
+#Type-vraag{
+    height:3em;
+    width:41%
+}
+
+
