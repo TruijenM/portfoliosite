@@ -12,14 +12,13 @@
             <div>Home</div>
         </a>
         <a href="../cv/CV.html">
-        <div>CV</div> </a>
-
-        <a href="../contact/Contact.html">
-            <div>Contact</div>
+            <div>CV</div>
         </a>
 
-            <div><u>Projecten</u></div>
-
+        <div><u>Contact</u></div>
+        <a href="../projecten/projecten.html">
+            <div>Projecten</div>
+        </a>
         <a href="../werkplekleren/werkplekleren.html">
             <div>Werkplekleren</div>
         </a>
@@ -27,17 +26,18 @@
 </header>
 
 <body>
-<form action="./post-demo.php" method="post">
+
+<form action="./post-demo.php" method="post" class="flex-container borders">
     <fieldset>
 
         <legend>Je gegevens</legend>
 
-        <h3><label for="Voornaam" >Voornaam</label></h3>
+        <h3><label for="Voornaam">Voornaam</label></h3>
         <input id="Voornaam" type="text" name="Voornaam" required placeholder="John"><br>
         <h3><label for="Achternaam">Achternaam</label></h3>
         <input id="Achternaam" type="text" name="Familienaam" required placeholder="Doe"><br>
         <h3><label for="E-mail">E-mail</label></h3>
-        <input id="E-mail" type="email" name="E-mail"  required placeholder="John.Doe@gmail.com"><br>
+        <input id="E-mail" type="email" name="E-mail" required placeholder="John.Doe@gmail.com"><br>
     </fieldset>
     <fieldset>
         <legend>Uw vraag</legend>
@@ -55,21 +55,13 @@
 
     </fieldset>
 </form>
+</div>
 
 
 </body>
 
 
-<footer>
-    <nav class="bottomsitenav">
-        <ul>
-            <li><a href=../index.html>Home</a></li>
-            <li><a href=../cv/CV.html> CV </a></li>
-            <li><u>Contact</u></li>
-            <li><a href=../projecten/projecten.html>Projecten</a></li>
-            <li><a href="../werkplekleren/werkplekleren.html">Werkplekleren</a></li>
-        </ul>
-    </nav>
-    <a class=socialmedia href="https://github.com/TruijenM/" target="_blank">Github</a>
+<footer class="centertext">
+    <a class="socialmedia" href="https://github.com/TruijenM/" target="_blank">Github</a>
 </footer>
 </html>
