@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <title>Contact</title>
 </head>
-<header>
+
+
+<body>
+<header class="flex-container">
     <h1 class="sitename">Contact</h1>
     <nav>
         <a href="../index.html">
@@ -25,10 +28,8 @@
     </nav>
 </header>
 
-<body>
-
 <form action="./post-demo.php" method="post" class="flex-container">
-    <fieldset class="borders centertext smalltext">
+    <fieldset class="borders centertext mediumtext">
 
         <legend>Je gegevens</legend>
 
@@ -39,7 +40,7 @@
         <h3><label for="E-mail">E-mail</label></h3>
         <input id="E-mail" type="email" name="E-mail" required placeholder="John.Doe@gmail.com"><br>
     </fieldset>
-    <fieldset class="borders centertext smalltext">
+    <fieldset class="borders centertext mediumtext">
         <legend>Uw vraag</legend>
         <h3><label for="Type-vraag">Waarvoor wilt u contact opnemen?</label></h3>
         <select name="Type-vraag" id="Type-vraag">
@@ -51,7 +52,7 @@
         </select><br>
         <label for="Vraag">
         </label><textarea name="Vraag" id="Vraag" cols="49" rows="10" required></textarea><br>
-        <input type="submit" value="Verstuur">
+        <input type="submit" value="Verstuur" class="button">
 
     </fieldset>
 </form>
@@ -61,7 +62,7 @@
 </body>
 
 
-<footer class="centertext">
+<footer class="smalltext centertext">
     <a class="socialmedia" href="https://github.com/TruijenM/" target="_blank">Github</a>
 </footer>
 </html>

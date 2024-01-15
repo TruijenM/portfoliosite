@@ -26,13 +26,14 @@ html {
     margin-bottom: 3px;
 }
 
+
 .flex-container {
     display: flex;
     justify-content: center;
     flex-wrap:wrap;
 }
 .flex-container>*{
-    margin: 0 8vw 0 8vw;
+    margin: 0 8vw 3px 8vw;
     flex-basis: 100vw;
 }
 
@@ -45,10 +46,6 @@ html {
 
 }
 
-.flex-container-cv-head{
-
-    margin: 0 7.5vw 0 7.5vw;
-}
 
 nav {
     font-size: 3.5em;
@@ -126,13 +123,20 @@ main > div {
 .smalltext{
     font-size: 2em;
 }
-input, textarea{
-    height: 3em;
-    width: 40%;
+input, textarea,select,#Type-vraag{
+    height: 4em;
+    width: 60%;
+    font-size: 0.5em;
 }
-#Type-vraag{
-    height:3em;
-    width:41%
+textarea{
+    width: 59%;!important;
+}
+
+form{
+    margin: 0 8vw 0 8vw;
+}
+.button{
+
 }
 
 
