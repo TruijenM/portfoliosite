@@ -99,7 +99,7 @@ h1 {
 }
 
 main {
-    /*padding-left: 2vw;*/
+
     font-size: 2em;
 
 }
@@ -113,11 +113,13 @@ blockquote {
 }
 
 main > div {
-    font-size: 2em;
     border-color: #ffffff;
     border-style: solid;
     border-radius: 25px;
-    /*margin: 0 2vw 3% 1vw;*/
+
+}
+main>div>*{
+    padding-left: 2%;
 }
 .centertext{
     text-align:center ;
@@ -136,6 +138,9 @@ input, textarea,select,#Type-vraag{
 }
 textarea{
     width: 59%;!important;
+}
+nav:last-child{
+    margin-bottom: 5%;
 }
 
 
