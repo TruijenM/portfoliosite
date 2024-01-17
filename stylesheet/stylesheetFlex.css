@@ -6,6 +6,7 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+
 html {
     font-family: "Lobster Two", sans-serif;
 
@@ -19,41 +20,48 @@ html {
     margin: 0;
 
 }
-body,form{
-    margin:0;
+
+body, form {
+    margin: 0;
 }
-fieldset{
-    padding:0;
+
+fieldset {
+    padding: 0;
 }
-.borders{
+
+.borders {
     border-style: solid;
     border-width: 2px;
     border-radius: 25px;
     margin-bottom: 3px;
 }
-ul,ol{
+
+ul, ol {
     list-style-position: inside;
 }
-
-
 
 .flex-container {
     display: flex;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     margin: 0 8vw 3px 8vw;
 }
 
-.flex-container>*{
+.flex-containercv {
+    display: flex;
+    /*justify-content: center;*/
+    flex-wrap: wrap;
+    margin: 0 8vw 3px 8vw;
+}
+
+
+.flex-container > * {
+    flex-basis: 100vw;
+}
+
+.wide > * {
     flex-basis: 100vw;
     padding-left: 1%;
-}
-.flex-container>img{
-    flex-basis: 0;
-    position:relative;
-    margin-top: 1%;
-    right:43%;
-
 }
 
 .flex-container-cv-head {
@@ -61,28 +69,42 @@ ul,ol{
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 2.5em;
+    margin: 0 8vw 3px 8vw;
 
 }
 
+.flex-container > img {
+    position: relative;
+    margin-top: 1%;
+    right: 20%;
+}
+
+.flex-container-cv-head > *:not(.flex-container-cv-head>img) {
+    flex-basis: 100vw;
+}
+
+.flex-container-cv-head p {
+    font-size: 0.6em;
+}
 
 nav {
     font-size: 3.5em;
     margin-bottom: 8%;
     flex-basis: 100vw;
 }
-div{ margin-bottom: 5px;}
 
+div {
+    margin-bottom: 5px;
+}
 
 nav > a > div, nav > div {
     text-align: center;
     border-style: solid;
     border-width: 2px;
     border-radius: 25px;
-
-
 }
 
-nav > a > div:hover, .hoverdiv>div:hover {
+nav > a > div:hover, .hoverdiv > div:hover {
     background-color: rgba(41, 41, 68, 0.69)
 }
 
@@ -90,7 +112,6 @@ a, a:link, a:visited {
 
     color: #c0c0c0;
     text-decoration: none;
-
 }
 
 h1 {
@@ -98,12 +119,7 @@ h1 {
     font-size: 4.5em;
 }
 
-main {
-
-    font-size: 2em;
-
-}
-main>*{
+main > * {
     font-size: 2em;
 }
 
@@ -118,30 +134,78 @@ main > div {
     border-radius: 25px;
 
 }
-main>div>*{
+
+main > div > * {
     padding-left: 2%;
 }
-.centertext{
-    text-align:center ;
+
+.centertext {
+    text-align: center;
 }
-.mediumtext{
+
+.mediumtext {
     font-size: 3em;
 }
-.smalltext{
+
+.smalltext {
     font-size: 2em;
 }
-input, textarea,select,#Type-vraag{
+
+input, textarea, select, #Type-vraag {
     height: 4em;
     width: 60%;
     font-size: 0.5em;
     margin-bottom: 20px;
 }
-textarea{
-    width: 59%;!important;
+
+textarea {
+    width: 59%;
+
 }
-nav:last-child{
+
+nav:last-child {
     margin-bottom: 5%;
 }
 
+@media screen and (min-width: 500px) {
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .flex-container {
+        flex-wrap: nowrap;
+
+    }
+
+    .flex-containercv, .flex-containercv > * {
+        font-size: 30px;
+        margin: 0 15vw 3px 15vw;
+
+    }
 
 
+    .flex-container > * {
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    nav, nav > * {
+        font-size: 1.5em;
+        justify-content: space-evenly !important;
+        flex: 1;
+    }
+}
+
+
+/*    min-width: 18vw;*/
+/*    margin-right: 5px;*/
+/*}*/
+/*.flex-container {*/
+/*    flex-wrap: nowrap;*/
+/*    flex-basis: 40vw;*/
+/*}*/
+/*main{*/
+/*    font-size: 1em;*/
+/*}*/
