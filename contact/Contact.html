@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <link rel="stylesheet" type="text/css" href=../stylesheet/stylesheet.css>
+    <link rel="stylesheet" type="text/css" href=../stylesheet/stylesheetFlex.css>
+    <link rel="icon" type="image/x-icon" href="../stylesheet/favicon.ico">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 </head>
+
+
+<body>
 <header>
     <h1 class="sitename">Contact</h1>
-    <nav class="topsitenav">
-        <ul>
-            <li><a href=../index.html>Home</a></li>
-            <li><a href=../cv/CV.html> CV </a></li>
-            <li><u>Contact</u></li>
-            <li><a href=../projecten/projecten.html>Projecten</a></li>
-            <li><a href="../werkplekleren/werkplekleren.html">Werkplekleren</a></li>
-        </ul>
+    <nav class="flex-container">
+        <a href="../index.html">
+            <div>Home</div>
+        </a>
+        <a href="../cv/CV.html">
+            <div>CV</div>
+        </a>
+
+        <div><u>Contact</u></div>
+        <a href="../projecten/projecten.html">
+            <div>Projecten</div>
+        </a>
+        <a href="../werkplekleren/werkplekleren.html">
+            <div>Werkplekleren</div>
+        </a>
     </nav>
 </header>
 
-<body>
-<form action="./post-demo.php" method="post">
-    <fieldset>
+<form action="./post-demo.php" method="post" class="flex-container">
+    <fieldset class="borders centertext mediumtext">
 
         <legend>Je gegevens</legend>
 
-        <h3><label for="Voornaam" >Voornaam</label></h3>
+        <h3><label for="Voornaam">Voornaam</label></h3>
         <input id="Voornaam" type="text" name="Voornaam" required placeholder="John"><br>
         <h3><label for="Achternaam">Achternaam</label></h3>
         <input id="Achternaam" type="text" name="Familienaam" required placeholder="Doe"><br>
         <h3><label for="E-mail">E-mail</label></h3>
-        <input id="E-mail" type="email" name="E-mail"  required placeholder="John.Doe@gmail.com"><br>
+        <input id="E-mail" type="email" name="E-mail" required placeholder="John.Doe@gmail.com"><br>
     </fieldset>
-    <fieldset>
+    <fieldset class="borders centertext mediumtext">
         <legend>Uw vraag</legend>
         <h3><label for="Type-vraag">Waarvoor wilt u contact opnemen?</label></h3>
         <select name="Type-vraag" id="Type-vraag">
@@ -43,25 +54,18 @@
         </select><br>
         <label for="Vraag">
         </label><textarea name="Vraag" id="Vraag" cols="49" rows="10" required></textarea><br>
-        <input type="submit" value="Verstuur">
+        <input type="submit" value="Verstuur" class="button">
 
     </fieldset>
 </form>
 
 
+<footer class="centertext smalltext">
+    <a href="https://github.com/TruijenM/" target="_blank">Github</a>
+</footer>
+
 </body>
 
 
-<footer>
-    <nav class="bottomsitenav">
-        <ul>
-            <li><a href=../index.html>Home</a></li>
-            <li><a href=../cv/CV.html> CV </a></li>
-            <li><u>Contact</u></li>
-            <li><a href=../projecten/projecten.html>Projecten</a></li>
-            <li><a href="../werkplekleren/werkplekleren.html">Werkplekleren</a></li>
-        </ul>
-    </nav>
-    <a class=socialmedia href="https://github.com/TruijenM/" target="_blank">Github</a>
-</footer>
+
 </html>
