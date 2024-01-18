@@ -88,7 +88,7 @@ ul, ol {
 }
 
 nav {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 8%;
     flex-basis: 100vw;
 }
@@ -116,8 +116,12 @@ a, a:link, a:visited {
 
 h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.8rem;
 }
+h3{
+   font-size: 1.8rem;
+}
+
 
 main > * {
     font-size: 1.5rem;
@@ -152,9 +156,9 @@ main > div > * {
 }
 
 input, textarea, select, #Type-vraag {
-    height: 4em;
+    height: 2rem;
     width: 60%;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 20px;
 }
 
@@ -191,7 +195,6 @@ nav:last-child {
     }
 
     nav, nav > * {
-        font-size: 2rem;
         justify-content: space-evenly !important;
         flex: 1;
     }
