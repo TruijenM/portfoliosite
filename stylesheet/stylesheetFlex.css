@@ -88,7 +88,7 @@ ul, ol {
 }
 
 nav {
-    font-size: 3.5em;
+    font-size: 3rem;
     margin-bottom: 8%;
     flex-basis: 100vw;
 }
@@ -116,11 +116,11 @@ a, a:link, a:visited {
 
 h1 {
     text-align: center;
-    font-size: 4.5em;
+    font-size: 4rem;
 }
 
 main > * {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 blockquote {
@@ -144,17 +144,17 @@ main > div > * {
 }
 
 .mediumtext {
-    font-size: 3em;
+    font-size: 2rem;
 }
 
 .smalltext {
-    font-size: 2em;
+    font-size: 1.5rem;
 }
 
 input, textarea, select, #Type-vraag {
     height: 4em;
     width: 60%;
-    font-size: 0.5em;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
@@ -166,64 +166,10 @@ textarea {
 nav:last-child {
     margin-bottom: 5%;
 }
-
-/*Cv styling=============================*/
-.container {
-    margin: auto;
-    width: 90%;
-    max-width: 800px;
-    background-color: rgba(255, 255, 255, 0);
-    border: 2px solid #c0c0c0;
-    border-radius: 25px;
-    margin-top: 20px;
-    padding: 10px;
-}
-
-.header, .contact-info, main {
-    margin-bottom: 20px;
-}
-
-.header {
-    text-align: center;
-}
-
-.contact-info {
-    text-align: center;
-}
-
-.maincv {
-    font-size: 18px;
-}
-
-.section-header {
-    font-size: 23px;
-    text-align: center;
-    text-decoration: underline;
-    font-weight: 400;
-}
-
-@media screen and (min-width: 600px) {
-    .container {
-        width: 70%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 60%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .container {
-        width: 50%;
-    }
-}
-/*end cv styling===========================================*/
 @media screen and (min-width: 768px) {
 
     h1 {
-        font-size: 2.5em;
+        font-size: 2.5rem;
     }
 
     .flex-container {
@@ -245,7 +191,7 @@ nav:last-child {
     }
 
     nav, nav > * {
-        font-size: 1.5em;
+        font-size: 2rem;
         justify-content: space-evenly !important;
         flex: 1;
     }
@@ -261,7 +207,10 @@ nav:last-child {
 
     }
     .mediumtext{
-        font-size: 1.5em;
+        font-size: 1.5rem;
+    }
+    .responsiveMargin{
+        margin-right: 5px;
     }
 }
 
