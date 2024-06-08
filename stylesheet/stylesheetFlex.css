@@ -38,6 +38,16 @@ fieldset {
     padding-left: 1%;
 }
 
+.noBorders {
+    border-style: none;
+!important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 ul, ol {
     list-style-position: inside;
 }
